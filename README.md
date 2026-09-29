@@ -1,239 +1,159 @@
-# Awesome-Cold-Email-Automation
-
-## Top Cold Email Automation Platforms Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Outreach Sequences, Email Warmup, Deliverability Optimization & Lead Enrichment*
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Cold Email Automation**. These tools help sales teams, agencies, and founders run multi-step outreach campaigns, warm up sending mailboxes, rotate inboxes to avoid spam filters, and track engagement metrics like opens, clicks, and replies.
-
-
-
-**Examples** include Lemlist, Instantly, Smartlead, Mailshake, QuickMail, Woodpecker, Reply.io, Snov.io, GMass, and YAMM (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom outreach logic, and transparent deliverability data — ideal for teams that need full control over their sending infrastructure without per-seat SaaS fees or vendor lock-in.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[lemlist](https://lemlist.com/)**
-
-  Personalized cold outreach platform with multichannel sequences (email + LinkedIn), image personalization, and built-in email warmup (Lemwarm). Known for its "emails that get replies" positioning and strong founder-led sales community.
-
-
-
-- **[Instantly](https://instantly.ai/)**
-
-  Cold email platform focused on deliverability and scale. Provides unlimited email accounts, automated warmup, inbox rotation, and a unified master inbox. Popular with agencies managing multiple client campaigns.
-
-
-
-- **[Smartlead](https://smartlead.ai/)**
-
-  All-in-one cold email infrastructure platform. Features unlimited mailbox rotation, AI-powered warmup, unified master inbox, and white-label agency capabilities. Strong focus on deliverability and scale for agencies and high-volume senders.
-
-
-
-- **[Mailshake](https://mailshake.com/)**
-
-  Sales engagement platform for cold email, social selling, and phone outreach. Provides mail merge, auto-follow-ups, and lead catcher for reply management.
-
-
-
-- **[QuickMail](https://quickmail.com/)**
-
-  Cold email platform designed for agencies and consultants. Provides inbox rotation, automated follow-ups, and a centralized inbox for managing multiple client accounts.
-
-
-
-- **[Woodpecker](https://woodpecker.co/)**
-
-  Cold email automation for B2B sales and agencies. Features A/B testing, condition-based sequences, and a "cold email academy" for best practices.
-
-
-
-- **[Reply.io](https://reply.io/)**
-
-  Multichannel sales engagement platform with email, LinkedIn, and calling capabilities. Features AI-powered email writing, B2B database, and meeting booking integration.
-
-
-
-- **[Snov.io](https://snov.io/)**
-
-  All-in-one cold outreach platform combining email finding, verification, drip campaigns, and CRM. Includes a Chrome extension for finding emails on websites.
-
-
-
-- **[GMass](https://gmass.co/)**
-
-  Cold email and mail merge tool that works inside Gmail. Provides mass email, follow-ups, and tracking without leaving the Gmail interface.
-
-
-
-- **[YAMM](https://yamm.com/)**
-
-  Yet Another Mail Merge — Google Sheets add-on for sending personalized mass emails through Gmail. Simple, spreadsheet-driven approach to cold outreach.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Full Outreach Platforms
-
-
-
-- **[Warmbly](https://github.com/warmbly/warmbly)**
-
-  **The largest open-source B2B cold outreach and email warmup platform.** Apache License 2.0. Runs campaigns from your own mailboxes with a **shared dashboard** for opens, clicks, and replies. **Warmup uses a pool of monitored mailboxes** — not throwaway accounts — with automatic spam rescue and realistic engagement patterns. Features multi-step sequences, unified inbox, CRM (contacts, pipelines, deals, tasks), visual reply playbooks with AI steps, and integrations (HubSpot, Slack, Zapier, REST API, webhooks). **Self-hosting with zero cloud dependencies**: one command (`curl -fsSL https://warmbly.com/install.sh | sh`) brings up the full stack on local open-source pieces — no AWS, GCP, Stripe, or Kafka required. Workers are interchangeable Go services that send mail through each mailbox's own provider, not the worker's IP .
-
-
-
-- **[Pigeon](https://github.com/tarinagarwal/Pigeon)**
-
-  **Open-source cold email outreach and deliverability platform.** Features multi-step sequences with per-step delays, A/B testing with auto-selected winner (scored 60% on reply rate, 40% on open rate), **inbox rotation** mixing Gmail and SMTP mailboxes, scheduling with timezone and weekday control, and **three layers of volume control** (campaign daily cap, per-inbox cap hard-limited to 50/day, ramp-up tier by inbox age). **Mailbox warmup** with multi-turn threaded conversations using correct `In-Reply-To` and `References` headers. **Automatic spam rescue** opens messages, marks them important, and moves them out of spam. **Pairing risk scoring** evaluates how artificial a sender-receiver pairing looks (weights: recent pair reuse 0.45, reciprocity cap 0.20, provider concentration 0.20, domain concentration 0.15) and ships in `shadow` mode. **DNS automation** writes SPF, DKIM, DMARC to Cloudflare, GoDaddy, Namecheap, or Google Cloud DNS. Per-recipient AI writing with your own API key (OpenAI, Anthropic, Gemini, DeepSeek, Grok, Groq). Tech stack: Next.js 16, React 19, TypeScript, MongoDB, Docker Compose .
-
-
-
-- **[Emareach](https://github.com/ritik-prog/emareach)**
-
-  **Production-grade open-source AI email marketing platform** with automation, campaigns, deliverability, analytics, and self-hosting. Features campaigns (sequences, scheduling, per-inbox limits, A/B templates), **mailbox warmup with LLM-generated threads**, spam→inbox recovery, SPF/DKIM/DMARC checks, Gmail/Outlook OAuth, contacts enrichment and email validation, open/click tracking with custom tracking domains, and a support bot using ChromaDB RAG. **Billing** includes Razorpay (India) and Lemon Squeezy (international). **Admin panel** for user, plan, warmup, and infrastructure management. Tech stack: FastAPI (Python 3.12), Next.js 16, MongoDB 7, ChromaDB, Groq LLM, Serper, SendGrid. **Monorepo with Terraform for AWS deployment** (EC2/ALB/ECR/IAM/SSM) .
-
-
-
-### AI-Powered Outreach Agents
-
-
-
-- **[free_outbound_agent](https://github.com/Dumebii/free_outbound_agent)**
-
-  **Open-source AI-powered outbound email agent.** Finds prospects on GitHub and Dev.to, writes personalized emails with Claude or GPT-4, and sends via any SMTP provider. Features configurable **ICP segments** (matched against lead bios), GitHub search queries, Dev.to tag search, Product Hunt topics, multi-step follow-up sequences (configurable delays and subject hints), and daily send limits. **LinkedIn pipeline** generates personalized messages at volume while keeping you in control of actual sending (copy-paste queue, ~30 seconds per lead) to avoid account flags. Config uses YAML with `provider: claude` or `openai`, tone control, and banned words. **Python-based** .
-
-
-
-- **[gtm-mcp](https://github.com/impecablemee/gtm-mcp)**
-
-  **Open-source B2B cold outreach pipeline for Claude Code.** One `/launch` command orchestrates: find companies (Apollo), classify with AI, extract contacts, write deeply personalized sequences, push to SmartLead. **Zero LLM calls inside the server** — all reasoning stays in Claude Code using domain knowledge encoded as markdown skills. Features **strategy approval** and **activation** checkpoints where you decide. **49 tools** for config, Apollo search, website scraping, contact extraction, and campaign creation. **Via negativa classification** (exclude non-targets, not define targets) achieves 97% accuracy. **Max 200 Apollo credits** per run (default). **Python-based with stdio transport** for Claude Code integration .
-
-
-
-- **[cold-outreach-agent](https://github.com/jordan-jakisa/cold-outreach-agent)**
-
-  **Simple cold outreach email agent for salespeople.** Generates sales emails based on product, user profile, pain points, and description using GPT-3.5. Sends emails to people listed in a CSV file. **Streamlit app** with LangChain and smtplib. Minimal setup: `.env` file with `USER_EMAIL` and `EMAIL_PASSWORD` (app password), then `streamlit run src/main.py` .
-
-
-
-- **[Automated-Outreach-Pipeline](https://github.com/AnanyaGubba/Automated-Outreach-Pipeline)**
-
-  **Fully autonomous cold-outreach system** using multiple third-party APIs. Starting from a single seed company domain, executes four stages: lookalike company discovery (Ocean.io), decision-maker identification (Prospeo), verified work email resolution (Eazyreach), and personalized outreach sending (Brevo). **Safety checkpoint** displays summary before sending. Handles API failures, rate limits, and missing data gracefully. **Python 3.13+** .
-
-
-
-### Sending Infrastructure & Libraries
-
-
-
-- **[elxmail](https://www.npmjs.com/package/elxmail)**
-
-  **Cold email sending SDK with built-in warmup, rotation, and deliverability controls.** Features **bulk send with intelligent spacing** (accepts 5,000 emails immediately, spaces over hours respecting rate limits, warmup curves, provider rules), **DNS validation** (SPF, DKIM, DMARC, rDNS), **content spam scoring** (0-100), **suppression management**, **queue control** (pause/resume/drain), **warmup status tracking** (per-domain current limits and health), **analytics** (by domain, provider, IP, time series), and **DKIM key generation**. **Event system** for every lifecycle stage: sent, delivered, bounced (hard/soft auto-suppressed), complained (auto-suppressed), opened, throttle limits, warmup limits, DNS warnings. **Node.js SDK**. The README includes a **deliverability playbook** covering infrastructure setup (domains, IPs, SMTP servers), DNS configuration, and phased warmup .
-
-
-
-### LinkedIn Outreach (Self-Hosted)
-
-
-
-- **[Linki](https://github.com/moaljumaa/linki)**
-
-  **Self-hosted AI SDR for B2B outreach** — LinkedIn sequences, cold email, and lead enrichment. **No per-seat pricing, no SaaS middleman.** Features multichannel campaigns (LinkedIn + email in one sequence), **server-side LinkedIn login** (headless, handles email/SMS codes and mobile-app device approval, captures httpOnly Sales Navigator cookies), Sales Navigator import, CSV import, Apollo.io enrichment, unified inbox with email + LinkedIn reply detection, **pinned browser fingerprint** (eliminates forced logouts), and **email account ramp-up**. **Go-based runner** with Docker deployment .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Full Platforms**: **Warmbly** (largest, Apache 2.0, zero cloud deps), **Pigeon** (comprehensive, Next.js/MongoDB), **Emareach** (production-grade, FastAPI/Next.js) .
-
-- **AI Agents**: **free_outbound_agent** (GitHub/Dev.to sourcing), **gtm-mcp** (Claude Code pipeline), **cold-outreach-agent** (Streamlit) .
-
-- **Sending SDK**: **elxmail** (Node.js, warmup, DNS, analytics) .
-
-- **LinkedIn + Email**: **Linki** (self-hosted, server-side auth) .
-
-- **Pipeline Integration**: **SmartLead Activepieces piece** (MIT, open source, self-hostable) .
-
-
-
-**Frameworks for building custom systems**: Combine **Warmbly** for the complete outreach platform with warmup and CRM, **Pigeon** for multi-inbox rotation and deliverability automation, **elxmail** for the sending SDK with warmup and DNS validation, and **Linki** for LinkedIn + email multichannel sequences. Add **MongoDB/PostgreSQL** for persistence and **Docker** for deployment.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Cold email platforms handle sensitive prospect data; ensure compliance with GDPR, CAN-SPAM, and relevant anti-spam regulations.
-
-- **Open-source reality**: The open-source ecosystem for cold email automation is **mature and production-ready**. **Warmbly** provides a complete platform with zero cloud dependencies and one-command self-hosting . **Pigeon** offers comprehensive deliverability features including pairing risk scoring and DNS automation . **Emareach** delivers production-grade AI marketing with billing and admin panels . **elxmail** provides a sending SDK with warmup, DNS validation, and content scoring . For teams wanting the deepest control over their sending infrastructure without per-seat fees, these open-source options are **genuinely viable alternatives** to commercial platforms like Smartlead and Instantly.
-
-
+# Awesome Cold Email Automation 🚀
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cold-Email-Automation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cold-Email-Automation?style=flat-square&logo=github" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cold-Email-Automation/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cold-Email-Automation?style=flat-square&logo=github" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cold-Email-Automation/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+![Awesome Cold Email Automation Banner](assets/banner.svg)
 
 ---
 
+## 📌 Executive Overview & Ecosystem Guide
 
+Welcome to the **Curated Ecosystem Guide for Cold Email Automation, Automated Mailbox Warmup, Inbox Rotation & Sales Outreach Engineering**. 
 
-**Made for sales teams, agencies, founders, and growth operators.**
+Whether you are an enterprise sales team scaling outbound revenue, a growth marketing agency managing 100+ client domains, or an engineer self-hosting custom SMTP deliverability infrastructure without per-seat SaaS costs, this list provides an authoritative comparison of top **SaaS Outreach Platforms** and **Production-Ready Open-Source GitHub Repositories**.
 
-Let's make cold email automation more open, transparent, and deliverable.
+---
+
+## 📚 Table of Contents
+- [🏢 SaaS & Hosted Outreach Platforms](#-saas--hosted-outreach-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [⚡ Full Automation Platforms & Infrastructure](#-full-automation-platforms--infrastructure)
+  - [🤖 AI SDR Agents & Outbound Workflows](#-ai-sdr-agents--outbound-workflows)
+  - [📩 Sending SDKs & Warmup Utilities](#-sending-sdks--warmup-utilities)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [📈 Star History](#-star-history)
+- [💖 Support & Community](#-support--community)
+- [⚠️ Disclaimer](#️-disclaimer)
+
+---
+
+## 🏢 SaaS & Hosted Outreach Platforms
+
+> 📊 **Sector Market Size & Dynamics**: The global B2B Sales Engagement & Cold Email Automation software market is estimated at **~$2.1 Billion** in 2026 (projected to expand to **$5.4 Billion** by 2032). The sector is **moderately fragmented** with low barrier to entry for basic senders, undergoing rapid product consolidation around deliverability algorithms, automated inbox rotation, unified master inboxes, and autonomous AI SDR agents.
+
+| Platform / Tool 🚀 | Estimated ARR / Size 💼 | Starting Tier Price 💰 | Free Tier / Trial Limits 🎁 | Key Features & Core Positioning ⚡ |
+| :--- | :--- | :--- | :--- | :--- |
+| **[lemlist](https://lemlist.com/)** | **~$60M ARR** ($150M valuation) | `$39/month` (Email Starter) | 14-day free trial *(No credit card required)* | Multichannel sequences (Email + LinkedIn), dynamic image/landing page personalization, built-in Lemwarm warmup engine. |
+| **[Instantly.ai](https://instantly.ai/)** | **~$40M ARR** (Bootstrapped) | `$37/month` (Growth Plan) | 14-day free trial *(Full access to features)* | Unlimited sending accounts, automated inbox rotation, master inbox, high-volume agency infrastructure. |
+| **[Snov.io](https://snov.io/)** | **~$25M ARR** (Bootstrapped) | `$30/month` (Starter Plan) | **Free Forever Plan** *(50 credits/mo, 100 recipients/mo)* | All-in-one platform with email finder, email verifier, drip outreach campaigns, and lightweight CRM. |
+| **[Reply.io](https://reply.io/)** | **~$14.7M ARR** | `$49/user/mo` (Starter) | 14-day free trial *(plus Free Plan with 200 credits/mo)* | AI SDR agent (Jason.ai), multichannel outreach (Email, LinkedIn, Phone), meeting booking automation. |
+| **[Smartlead](https://smartlead.ai/)** | **~$14M ARR** (Bootstrapped) | `$39/month` (Basic Plan) | 14-day free trial *(Unlimited email accounts)* | Master inbox, white-label agency dashboard, automated deliverability protection, unlimited mailbox rotation. |
+| **[Woodpecker](https://woodpecker.co/)** | **~$11.6M ARR** | `$29/month` (Cold Email) | 7-day free trial *(Send up to 50 cold emails)* | B2B cold email tool with condition-based sequences, adaptive send rates, and spam detection alerts. |
+| **[GMass](https://gmass.co/)** | **~$8.6M ARR** (Bootstrapped) | `$25/month` (Standard Plan) | **Free Forever Plan** *(Send up to 50 emails/day)* | Native Gmail/Google Workspace mail merge extension with automated follow-ups and click tracking. |
+| **[QuickMail](https://quickmail.com/)** | **~$2.8M ARR** (Bootstrapped) | `$49/month` (Basic Plan) | 14-day free trial *(Up to 1,000 emails/mo)* | Built for agencies & consultants; features primary/secondary inbox rotation and automated follow-up sequences. |
+| **[Mailshake](https://mailshake.com/)** | **~$2.4M ARR** | `$58/month` (Email Outreach) | 30-day money-back guarantee *(7-day trial)* | Sales engagement platform for cold email, phone dialer integration, and LinkedIn social outreach tasks. |
+| **[YAMM](https://yamm.com/)** | **~$2.0M ARR** | `$25/year` (~`$2.08/mo`) | **Free Forever Plan** *(50 emails/day Gmail, 400/day Workspace)* | Spreadsheet-driven mail merge add-on for Google Sheets with real-time open and bounce tracking. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+Below is a comprehensive collection of active open-source cold email platforms, deliverability SDKs, AI outbound agents, and mail merge frameworks. Ranked in descending order by **GitHub Star Count**.
+
+---
+
+### ⚡ Full Automation Platforms & Infrastructure
+
+* **[Activepieces](https://github.com/activepieces/activepieces)** [![GitHub stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social)](https://github.com/activepieces/activepieces/stargazers)  
+  *Open-source no-code business automation & workflow engine.* Integrates natively with Smartlead, Instantly, Lemlist, and Apollo to automate complex cold outreach sequences, CRM updates, and lead scoring. *License: MIT / AGPLv3.*
+
+* **[listmonk](https://github.com/knadh/listmonk)** [![GitHub stars](https://img.shields.io/github/stars/knadh/listmonk?style=social)](https://github.com/knadh/listmonk/stargazers)  
+  *High-performance open-source newsletter and cold outreach engine written in Go.* Handles multi-million message queues with low CPU/memory overhead, custom tracking domains, template rendering, and SQL-backed subscriber segmentation. *License: AGPLv3.*
+
+* **[Postal](https://github.com/postalserver/postal)** [![GitHub stars](https://img.shields.io/github/stars/postalserver/postal?style=social)](https://github.com/postalserver/postal/stargazers)  
+  *Fully featured open-source mail delivery platform for incoming and outgoing mail.* Replaces SendGrid/Mailgun with your own IP pools, DKIM signing, MX routing, webhook delivery events, and SMTP relay servers. *License: MIT.*
+
+* **[Mautic](https://github.com/mautic/mautic)** [![GitHub stars](https://img.shields.io/github/stars/mautic/mautic?style=social)](https://github.com/mautic/mautic/stargazers)  
+  *World's largest open-source marketing automation platform.* Provides automated drip email sequences, lead tracking, campaign builders, and lead scoring for self-hosted sales teams. *License: GPLv3.*
+
+* **[Warmbly](https://github.com/warmbly/warmbly)** [![GitHub stars](https://img.shields.io/github/stars/warmbly/warmbly?style=social)](https://github.com/warmbly/warmbly/stargazers)  
+  *The largest open-source B2B cold outreach & email warmup platform.* Apache 2.0 license. Features multi-step sequences, shared analytics, and mailbox warmup using a network of real monitored mailboxes with automatic spam rescue. Zero cloud dependencies with one-command installation. *License: Apache 2.0.*
+
+* **[Meteor Emails](https://github.com/catin-black/meteor-emails)** [![GitHub stars](https://img.shields.io/github/stars/catin-black/meteor-emails?style=social)](https://github.com/catin-black/meteor-emails/stargazers)  
+  *Free and open-source cold email outreach engine designed to eliminate sales stagnation.* Allows sending customized multi-step sequences with zero subscription fees. *License: MIT.*
+
+* **[Linki](https://github.com/moaljumaa/linki)** [![GitHub stars](https://img.shields.io/github/stars/moaljumaa/linki?style=social)](https://github.com/moaljumaa/linki/stargazers)  
+  *Self-hosted AI SDR for multichannel outreach (LinkedIn + Email).* Features server-side headless LinkedIn login, Sales Navigator extraction, unified inbox, and mailbox ramp-up routines. *License: AGPLv3.*
+
+* **[DarkzWarmer](https://github.com/darkzOGx/darkzwarmer)** [![GitHub stars](https://img.shields.io/github/stars/darkzOGx/darkzwarmer?style=social)](https://github.com/darkzOGx/darkzwarmer/stargazers)  
+  *Self-hosted email warmup network.* Features cross-domain warmup on a 28-day ramp with human-delayed auto-replies over IMAP or Resend inbound with provider-agnostic SMTP support. *License: MIT.*
+
+* **[Pigeon](https://github.com/tarinagarwal/Pigeon)** [![GitHub stars](https://img.shields.io/github/stars/tarinagarwal/Pigeon?style=social)](https://github.com/tarinagarwal/Pigeon/stargazers)  
+  *Open-source cold email outreach & deliverability platform.* Multi-step campaigns, per-step delays, A/B testing with automated winner selection, Gmail/SMTP inbox rotation, pairing risk scoring, and DNS automation (SPF, DKIM, DMARC). Tech stack: Next.js 16, TypeScript, MongoDB. *License: MIT.*
+
+* **[Emareach](https://github.com/ritik-prog/emareach)** [![GitHub stars](https://img.shields.io/github/stars/ritik-prog/emareach?style=social)](https://github.com/ritik-prog/emareach/stargazers)  
+  *Production-grade open-source AI email marketing platform.* Warmup with LLM-generated threads, spam-to-inbox recovery, SPF/DKIM validation, contact enrichment, and custom tracking domains. Tech stack: FastAPI (Python 3.12), Next.js 16, MongoDB, Docker. *License: MIT.*
+
+---
+
+### 🤖 AI SDR Agents & Outbound Workflows
+
+* **[Cold Outbound Skills](https://github.com/growthenginenowoslawski/coldoutboundskills)** [![GitHub stars](https://img.shields.io/github/stars/growthenginenowoslawski/coldoutboundskills?style=social)](https://github.com/growthenginenowoslawski/coldoutboundskills/stargazers)  
+  *Open-source Claude Code skills for cold email and outbound sales.* Grade outreach campaigns, export Prospeo searches, scrape Google Maps, and generate hyper-personalized copy directly inside Claude Code. *License: MIT.*
+
+* **[Email-automation](https://github.com/PaulleDemon/Email-automation)** [![GitHub stars](https://img.shields.io/github/stars/PaulleDemon/Email-automation?style=social)](https://github.com/PaulleDemon/Email-automation/stargazers)  
+  *Lightweight open-source cold email outreach automation script.* Handles mailing lists, variable substitution, and automated dispatch via custom SMTP parameters. *License: MIT.*
+
+* **[GenAI Cold Email Generator](https://github.com/codebasics/project-genai-cold-email-generator)** [![GitHub stars](https://img.shields.io/github/stars/codebasics/project-genai-cold-email-generator?style=social)](https://github.com/codebasics/project-genai-cold-email-generator/stargazers)  
+  *LLM-powered cold email generation tool built with Llama 3.1, LangChain, ChromaDB, and Streamlit.* Scrapes job portal URLs, extracts company tech stacks, and crafts personalized pitch emails. *License: MIT.*
+
+* **[Harvey](https://github.com/ethanplusai/harvey)** [![GitHub stars](https://img.shields.io/github/stars/ethanplusai/harvey?style=social)](https://github.com/ethanplusai/harvey/stargazers)  
+  *Autonomous AI sales agent powered by Claude Code.* Automatically discovers prospects, drafts tailored cold emails, triggers campaigns, and handles inbound responses. *License: MIT.*
+
+* **[gtm-mcp](https://github.com/impecablemee/gtm-mcp)** [![GitHub stars](https://img.shields.io/github/stars/impecablemee/gtm-mcp?style=social)](https://github.com/impecablemee/gtm-mcp/stargazers)  
+  *Open-source B2B cold outreach pipeline built for Claude Code.* Orchestrates lead discovery (Apollo), AI classification, contact extraction, and SmartLead campaign pushing via stdio transport. *License: MIT.*
+
+* **[free_outbound_agent](https://github.com/Dumebii/free_outbound_agent)** [![GitHub stars](https://img.shields.io/github/stars/Dumebii/free_outbound_agent?style=social)](https://github.com/Dumebii/free_outbound_agent/stargazers)  
+  *Open-source AI outbound agent.* Finds prospects on GitHub & Dev.to, generates personalized messages with Claude or GPT-4, and sends via standard SMTP. Includes semi-automated LinkedIn messaging queue. *License: MIT.*
+
+* **[Cold Outreach Agent](https://github.com/jordan-jakisa/cold-outreach-agent)** [![GitHub stars](https://img.shields.io/github/stars/jordan-jakisa/cold-outreach-agent?style=social)](https://github.com/jordan-jakisa/cold-outreach-agent/stargazers)  
+  *Simple Streamlit cold outreach application.* Uses GPT-3.5 and smtplib to generate and dispatch personalized cold sales emails based on CSV recipient inputs. *License: MIT.*
+
+* **[Automated Outreach Pipeline](https://github.com/AnanyaGubba/Automated-Outreach-Pipeline)** [![GitHub stars](https://img.shields.io/github/stars/AnanyaGubba/Automated-Outreach-Pipeline?style=social)](https://github.com/AnanyaGubba/Automated-Outreach-Pipeline/stargazers)  
+  *Autonomous 4-stage cold outreach pipeline written in Python 3.13.* Performs lookalike company search (Ocean.io), contact discovery (Prospeo), email resolution (Eazyreach), and sending (Brevo). *License: MIT.*
+
+---
+
+### 📩 Sending SDKs & Warmup Utilities
+
+* **[elxmail](https://www.npmjs.com/package/elxmail)**  
+  *Cold email sending SDK for Node.js.* Features intelligent send spacing, DNS verification (SPF/DKIM/DMARC/rDNS), content spam scoring (0-100), auto-suppression management, and domain analytics.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! Help keep this repository the definitive resource for sales outreach engineers:
+
+1. **Fork the Repository** to your GitHub account.
+2. **Add or Edit Entries** in `README.md` following the established table & list markdown format.
+3. **Ensure Links & Star Badges** follow the exact `https://img.shields.io/github/stars/owner/repo?style=social` formatting.
+4. **Submit a Pull Request** with a concise description of your changes.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Cold-Email-Automation&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Cold-Email-Automation&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community
+
+Thank you for exploring **Awesome Cold Email Automation**! If this repository helps you build better deliverability infrastructure or streamline your cold outreach campaigns:
+
+* ⭐ **Star this repository** to stay updated on new tools and deliverability research.
+* 🔀 **Fork & Share** with fellow founders, sales engineers, and growth marketers.
+* ☕ **Support Maintenance**: Consider supporting ongoing updates via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚠️ Disclaimer
+
+This repository is a community-curated collection intended for educational and research purposes. Cold email platforms process sensitive prospect data; users must comply with CAN-SPAM, GDPR, CCPA, and relevant anti-spam regulations when configuring cold outreach infrastructure.

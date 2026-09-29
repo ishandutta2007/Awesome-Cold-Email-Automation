@@ -54,68 +54,68 @@ Whether you are an enterprise sales team scaling outbound revenue, a growth mark
 
 ## 💻 Open-Source GitHub Projects
 
-Below is a comprehensive collection of active open-source cold email platforms, deliverability SDKs, AI outbound agents, and mail merge frameworks. Ranked in descending order by **GitHub Star Count**.
+Below is a comprehensive collection of active open-source cold email platforms, deliverability SDKs, AI outbound agents, and mail merge frameworks. Ranked in descending order by **GitHub Stars_Count**.
 
 ---
 
 ### ⚡ Full Automation Platforms & Infrastructure
 
-* **[Activepieces](https://github.com/activepieces/activepieces)** [![GitHub stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social)](https://github.com/activepieces/activepieces/stargazers)  
+* **[Activepieces](https://github.com/activepieces/activepieces)** [![GitHub_Stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social)](https://github.com/activepieces/activepieces/stargazers)  
   *Open-source no-code business automation & workflow engine.* Integrates natively with Smartlead, Instantly, Lemlist, and Apollo to automate complex cold outreach sequences, CRM updates, and lead scoring. *License: MIT / AGPLv3.*
 
-* **[listmonk](https://github.com/knadh/listmonk)** [![GitHub stars](https://img.shields.io/github/stars/knadh/listmonk?style=social)](https://github.com/knadh/listmonk/stargazers)  
+* **[listmonk](https://github.com/knadh/listmonk)** [![GitHub_Stars](https://img.shields.io/github/stars/knadh/listmonk?style=social)](https://github.com/knadh/listmonk/stargazers)  
   *High-performance open-source newsletter and cold outreach engine written in Go.* Handles multi-million message queues with low CPU/memory overhead, custom tracking domains, template rendering, and SQL-backed subscriber segmentation. *License: AGPLv3.*
 
-* **[Postal](https://github.com/postalserver/postal)** [![GitHub stars](https://img.shields.io/github/stars/postalserver/postal?style=social)](https://github.com/postalserver/postal/stargazers)  
+* **[Postal](https://github.com/postalserver/postal)** [![GitHub_Stars](https://img.shields.io/github/stars/postalserver/postal?style=social)](https://github.com/postalserver/postal/stargazers)  
   *Fully featured open-source mail delivery platform for incoming and outgoing mail.* Replaces SendGrid/Mailgun with your own IP pools, DKIM signing, MX routing, webhook delivery events, and SMTP relay servers. *License: MIT.*
 
-* **[Mautic](https://github.com/mautic/mautic)** [![GitHub stars](https://img.shields.io/github/stars/mautic/mautic?style=social)](https://github.com/mautic/mautic/stargazers)  
+* **[Mautic](https://github.com/mautic/mautic)** [![GitHub_Stars](https://img.shields.io/github/stars/mautic/mautic?style=social)](https://github.com/mautic/mautic/stargazers)  
   *World's largest open-source marketing automation platform.* Provides automated drip email sequences, lead tracking, campaign builders, and lead scoring for self-hosted sales teams. *License: GPLv3.*
 
-* **[Warmbly](https://github.com/warmbly/warmbly)** [![GitHub stars](https://img.shields.io/github/stars/warmbly/warmbly?style=social)](https://github.com/warmbly/warmbly/stargazers)  
+* **[Warmbly](https://github.com/warmbly/warmbly)** [![GitHub_Stars](https://img.shields.io/github/stars/warmbly/warmbly?style=social)](https://github.com/warmbly/warmbly/stargazers)  
   *The largest open-source B2B cold outreach & email warmup platform.* Apache 2.0 license. Features multi-step sequences, shared analytics, and mailbox warmup using a network of real monitored mailboxes with automatic spam rescue. Zero cloud dependencies with one-command installation. *License: Apache 2.0.*
 
-* **[Meteor Emails](https://github.com/catin-black/meteor-emails)** [![GitHub stars](https://img.shields.io/github/stars/catin-black/meteor-emails?style=social)](https://github.com/catin-black/meteor-emails/stargazers)  
+* **[Meteor Emails](https://github.com/catin-black/meteor-emails)** [![GitHub_Stars](https://img.shields.io/github/stars/catin-black/meteor-emails?style=social)](https://github.com/catin-black/meteor-emails/stargazers)  
   *Free and open-source cold email outreach engine designed to eliminate sales stagnation.* Allows sending customized multi-step sequences with zero subscription fees. *License: MIT.*
 
-* **[Linki](https://github.com/moaljumaa/linki)** [![GitHub stars](https://img.shields.io/github/stars/moaljumaa/linki?style=social)](https://github.com/moaljumaa/linki/stargazers)  
+* **[Linki](https://github.com/moaljumaa/linki)** [![GitHub_Stars](https://img.shields.io/github/stars/moaljumaa/linki?style=social)](https://github.com/moaljumaa/linki/stargazers)  
   *Self-hosted AI SDR for multichannel outreach (LinkedIn + Email).* Features server-side headless LinkedIn login, Sales Navigator extraction, unified inbox, and mailbox ramp-up routines. *License: AGPLv3.*
 
-* **[DarkzWarmer](https://github.com/darkzOGx/darkzwarmer)** [![GitHub stars](https://img.shields.io/github/stars/darkzOGx/darkzwarmer?style=social)](https://github.com/darkzOGx/darkzwarmer/stargazers)  
+* **[DarkzWarmer](https://github.com/darkzOGx/darkzwarmer)** [![GitHub_Stars](https://img.shields.io/github/stars/darkzOGx/darkzwarmer?style=social)](https://github.com/darkzOGx/darkzwarmer/stargazers)  
   *Self-hosted email warmup network.* Features cross-domain warmup on a 28-day ramp with human-delayed auto-replies over IMAP or Resend inbound with provider-agnostic SMTP support. *License: MIT.*
 
-* **[Pigeon](https://github.com/tarinagarwal/Pigeon)** [![GitHub stars](https://img.shields.io/github/stars/tarinagarwal/Pigeon?style=social)](https://github.com/tarinagarwal/Pigeon/stargazers)  
+* **[Pigeon](https://github.com/tarinagarwal/Pigeon)** [![GitHub_Stars](https://img.shields.io/github/stars/tarinagarwal/Pigeon?style=social)](https://github.com/tarinagarwal/Pigeon/stargazers)  
   *Open-source cold email outreach & deliverability platform.* Multi-step campaigns, per-step delays, A/B testing with automated winner selection, Gmail/SMTP inbox rotation, pairing risk scoring, and DNS automation (SPF, DKIM, DMARC). Tech stack: Next.js 16, TypeScript, MongoDB. *License: MIT.*
 
-* **[Emareach](https://github.com/ritik-prog/emareach)** [![GitHub stars](https://img.shields.io/github/stars/ritik-prog/emareach?style=social)](https://github.com/ritik-prog/emareach/stargazers)  
+* **[Emareach](https://github.com/ritik-prog/emareach)** [![GitHub_Stars](https://img.shields.io/github/stars/ritik-prog/emareach?style=social)](https://github.com/ritik-prog/emareach/stargazers)  
   *Production-grade open-source AI email marketing platform.* Warmup with LLM-generated threads, spam-to-inbox recovery, SPF/DKIM validation, contact enrichment, and custom tracking domains. Tech stack: FastAPI (Python 3.12), Next.js 16, MongoDB, Docker. *License: MIT.*
 
 ---
 
 ### 🤖 AI SDR Agents & Outbound Workflows
 
-* **[Cold Outbound Skills](https://github.com/growthenginenowoslawski/coldoutboundskills)** [![GitHub stars](https://img.shields.io/github/stars/growthenginenowoslawski/coldoutboundskills?style=social)](https://github.com/growthenginenowoslawski/coldoutboundskills/stargazers)  
+* **[Cold Outbound Skills](https://github.com/growthenginenowoslawski/coldoutboundskills)** [![GitHub_Stars](https://img.shields.io/github/stars/growthenginenowoslawski/coldoutboundskills?style=social)](https://github.com/growthenginenowoslawski/coldoutboundskills/stargazers)  
   *Open-source Claude Code skills for cold email and outbound sales.* Grade outreach campaigns, export Prospeo searches, scrape Google Maps, and generate hyper-personalized copy directly inside Claude Code. *License: MIT.*
 
-* **[Email-automation](https://github.com/PaulleDemon/Email-automation)** [![GitHub stars](https://img.shields.io/github/stars/PaulleDemon/Email-automation?style=social)](https://github.com/PaulleDemon/Email-automation/stargazers)  
+* **[Email-automation](https://github.com/PaulleDemon/Email-automation)** [![GitHub_Stars](https://img.shields.io/github/stars/PaulleDemon/Email-automation?style=social)](https://github.com/PaulleDemon/Email-automation/stargazers)  
   *Lightweight open-source cold email outreach automation script.* Handles mailing lists, variable substitution, and automated dispatch via custom SMTP parameters. *License: MIT.*
 
-* **[GenAI Cold Email Generator](https://github.com/codebasics/project-genai-cold-email-generator)** [![GitHub stars](https://img.shields.io/github/stars/codebasics/project-genai-cold-email-generator?style=social)](https://github.com/codebasics/project-genai-cold-email-generator/stargazers)  
+* **[GenAI Cold Email Generator](https://github.com/codebasics/project-genai-cold-email-generator)** [![GitHub_Stars](https://img.shields.io/github/stars/codebasics/project-genai-cold-email-generator?style=social)](https://github.com/codebasics/project-genai-cold-email-generator/stargazers)  
   *LLM-powered cold email generation tool built with Llama 3.1, LangChain, ChromaDB, and Streamlit.* Scrapes job portal URLs, extracts company tech stacks, and crafts personalized pitch emails. *License: MIT.*
 
-* **[Harvey](https://github.com/ethanplusai/harvey)** [![GitHub stars](https://img.shields.io/github/stars/ethanplusai/harvey?style=social)](https://github.com/ethanplusai/harvey/stargazers)  
+* **[Harvey](https://github.com/ethanplusai/harvey)** [![GitHub_Stars](https://img.shields.io/github/stars/ethanplusai/harvey?style=social)](https://github.com/ethanplusai/harvey/stargazers)  
   *Autonomous AI sales agent powered by Claude Code.* Automatically discovers prospects, drafts tailored cold emails, triggers campaigns, and handles inbound responses. *License: MIT.*
 
-* **[gtm-mcp](https://github.com/impecablemee/gtm-mcp)** [![GitHub stars](https://img.shields.io/github/stars/impecablemee/gtm-mcp?style=social)](https://github.com/impecablemee/gtm-mcp/stargazers)  
+* **[gtm-mcp](https://github.com/impecablemee/gtm-mcp)** [![GitHub_Stars](https://img.shields.io/github/stars/impecablemee/gtm-mcp?style=social)](https://github.com/impecablemee/gtm-mcp/stargazers)  
   *Open-source B2B cold outreach pipeline built for Claude Code.* Orchestrates lead discovery (Apollo), AI classification, contact extraction, and SmartLead campaign pushing via stdio transport. *License: MIT.*
 
-* **[free_outbound_agent](https://github.com/Dumebii/free_outbound_agent)** [![GitHub stars](https://img.shields.io/github/stars/Dumebii/free_outbound_agent?style=social)](https://github.com/Dumebii/free_outbound_agent/stargazers)  
+* **[free_outbound_agent](https://github.com/Dumebii/free_outbound_agent)** [![GitHub_Stars](https://img.shields.io/github/stars/Dumebii/free_outbound_agent?style=social)](https://github.com/Dumebii/free_outbound_agent/stargazers)  
   *Open-source AI outbound agent.* Finds prospects on GitHub & Dev.to, generates personalized messages with Claude or GPT-4, and sends via standard SMTP. Includes semi-automated LinkedIn messaging queue. *License: MIT.*
 
-* **[Cold Outreach Agent](https://github.com/jordan-jakisa/cold-outreach-agent)** [![GitHub stars](https://img.shields.io/github/stars/jordan-jakisa/cold-outreach-agent?style=social)](https://github.com/jordan-jakisa/cold-outreach-agent/stargazers)  
+* **[Cold Outreach Agent](https://github.com/jordan-jakisa/cold-outreach-agent)** [![GitHub_Stars](https://img.shields.io/github/stars/jordan-jakisa/cold-outreach-agent?style=social)](https://github.com/jordan-jakisa/cold-outreach-agent/stargazers)  
   *Simple Streamlit cold outreach application.* Uses GPT-3.5 and smtplib to generate and dispatch personalized cold sales emails based on CSV recipient inputs. *License: MIT.*
 
-* **[Automated Outreach Pipeline](https://github.com/AnanyaGubba/Automated-Outreach-Pipeline)** [![GitHub stars](https://img.shields.io/github/stars/AnanyaGubba/Automated-Outreach-Pipeline?style=social)](https://github.com/AnanyaGubba/Automated-Outreach-Pipeline/stargazers)  
+* **[Automated Outreach Pipeline](https://github.com/AnanyaGubba/Automated-Outreach-Pipeline)** [![GitHub_Stars](https://img.shields.io/github/stars/AnanyaGubba/Automated-Outreach-Pipeline?style=social)](https://github.com/AnanyaGubba/Automated-Outreach-Pipeline/stargazers)  
   *Autonomous 4-stage cold outreach pipeline written in Python 3.13.* Performs lookalike company search (Ocean.io), contact discovery (Prospeo), email resolution (Eazyreach), and sending (Brevo). *License: MIT.*
 
 ---
@@ -133,7 +133,7 @@ Contributions are warmly welcomed! Help keep this repository the definitive reso
 
 1. **Fork the Repository** to your GitHub account.
 2. **Add or Edit Entries** in `README.md` following the established table & list markdown format.
-3. **Ensure Links & Star Badges** follow the exact `https://img.shields.io/github/stars/owner/repo?style=social` formatting.
+3. **Ensure Links & Stars_Badges** follow the exact `https://img.shields.io/github/stars/owner/repo?style=social` formatting.
 4. **Submit a Pull Request** with a concise description of your changes.
 
 ---
